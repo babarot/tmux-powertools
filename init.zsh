@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-fpath+=( "${${:-./autoload}:A}" )
+fpath+=( "${0:A:h}/autoload" )
 
 for f in "${0:A:h}"/libs/*.zsh
 do
