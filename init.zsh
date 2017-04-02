@@ -2,7 +2,7 @@
 
 fpath+=( "${0:A:h}/autoload" )
 
-for f in "${0:A:h}"/libs/*.zsh
+for f in "${0:A:h}"/libs/**/*.zsh(N-.)
 do
     source "$f"
 done
